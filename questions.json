@@ -1,0 +1,26 @@
+{ "questions": [{
+    "author": "Veruca Salt",
+    "question": "San Francisco",
+    "date": "Estate"
+
+  }, {
+    "owner": "Mike Teavee",
+    "city": "Seattle",
+    "type": "Condo"
+
+  }, {
+    "owner": "Violet Beauregarde",
+    "city": "Portland",
+    "type": "Apartment"
+
+  }],
+  "answers": [{
+    "author": "Andrea",
+    "answer": 4,
+    "content": "Did not fall down."
+  }, {
+    "author": "Alex",
+    "answer": 9,
+    "content": "Nice view of the volcano!"
+  }]
+}
