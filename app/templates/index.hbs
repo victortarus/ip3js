@@ -1,7 +1,9 @@
 {{outlet}}
- <h1>Welcome to our question and answer session</h1>
+ <div class="header">
+   <h1>welcome to our question and answer session</h1>
+ </div>
  <ul>
-   {{#each model.questions as |question|}}
+   {{#each model questions as |question|}}
      <li>{{question.question}} - {{question.date}} - by {{question.author}}</li>
    {{/each}}
  </ul>
