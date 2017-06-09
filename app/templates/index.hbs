@@ -1,2 +1,13 @@
 {{outlet}}
  <h1>Welcome to our question and answer session</h1>
+ <ul>
+   {{#each model.questions as |question|}}
+     <li>{{question.question}} - {{question.date}} - by {{question.author}}</li>
+   {{/each}}
+ </ul>
+
+ {{new-question saveQuestion="saveQuestion"}}
+
+ <hr>
+
+ {{#link-to 'about'}}About{{/link-to}}
