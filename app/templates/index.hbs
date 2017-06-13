@@ -1,6 +1,25 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Ask and you shall get answered</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="{{#link-to 'about'}}{{/link-to}}">About</a></li>
+      <li><a href="#">contact</a></li>
+
+    </ul>
+  </div>
+</nav>
+
 {{outlet}}
- <div class="header">
-   <h1>welcome to our question and answer session</h1>
+<header>
+  Ask:
+</header>
+
+ <div class="container">
+
+   <h1>Welcome to our question and answer session</h1>
  </div>
  <ul>
    {{#each model questions as |question|}}
@@ -12,4 +31,8 @@
 
  <hr>
 
- {{#link-to 'about'}}About{{/link-to}}
+ <footer>
+   {{#link-to 'about'}}About{{/link-to}}
+   {{#link-to 'contact-us'}}{{/link-to}}
+
+ </footer>
