@@ -13,7 +13,7 @@ export default Ember.Component.extend({
 
       };
       this.set('updateAnswerForm', false);
-      this.sendAction('update'answer, params);
+      this.sendAction('update' ,answer, params);
     }
   }
 });
