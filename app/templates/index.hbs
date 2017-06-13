@@ -14,8 +14,11 @@
 
  {{new-question saveQuestion="saveQuestion"}}
  {{new-answer saveAnswer2="saveAnswer3"}}
-
+<li>{{answer-tile answer=answer  destroyAnswer=destroyAnswer}}</li>
 <h2>All answers</h2>
+{{#each model.answers as |answer|}}
+<li>{{answer.author}} -{{answer.answer}} -{{answer.content}}</li>
+{{/each}}
  <hr>
 
  <footer>
