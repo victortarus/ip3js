@@ -1,1 +1,10 @@
 {{yield}}
+<li>
+  {{answer.author}}'s {{answer.answer}} in {{author.content}}
+  {{#if isAnswerDialogShowing}}
+    <p><img src={{answer.author}} alt={{answer.answer}} {{action 'imageHide'}}></p>
+  {{else}}
+    <button {{action 'showDialogBox'}}>Answer</button>
+  {{/if}}
+  <button {{action 'delete' answer}}>Delete Answer</button>
+</li>
