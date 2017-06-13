@@ -6,5 +6,6 @@
   {{else}}
     <button {{action 'showDialogBox'}}>Answer</button>
   {{/if}}
+  {{update-answer answer=answer update="update"}}
   <button {{action 'delete' answer}}>Delete Answer</button>
 </li>

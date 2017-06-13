@@ -13,6 +13,11 @@ export default Ember.Route.extend({
         newAnswer.save();
         this.transitionTo('index');
       },
+      update(answer,params){
+        debugger;
+        answer.save();
+        this.transitionTo('index');
+      }
       destroyAnswer(answer){
         answer.destroyRecord();
         this.transitionTo('index');
