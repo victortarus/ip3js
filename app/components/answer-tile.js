@@ -7,4 +7,7 @@ export default Ember.Component.extend({
       this.set("isAnswerDialogShowing",true);
     }
   }
+  answerDialogBox:function(){
+    this.set("isAnswerDialogShowing",false);
+  }
 });

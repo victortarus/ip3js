@@ -2,7 +2,7 @@
 <li>
   {{answer.author}}'s {{answer.answer}} in {{author.content}}
   {{#if isAnswerDialogShowing}}
-    <p><img src={{answer.author}} alt={{answer.answer}} {{action 'imageHide'}}></p>
+    <p><img src={{answer.author}} alt={{answer.answer}} {{action 'answerDialogBox'}}></p>
   {{else}}
     <button {{action 'showDialogBox'}}>Answer</button>
   {{/if}}
