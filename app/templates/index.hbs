@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse">
+<!-- <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Ask and you shall get answered</a>
@@ -10,12 +10,12 @@
 
     </ul>
   </div>
-</nav>
+</nav> -->
 
 
-<header>
+<!-- <header>
   Ask:
-</header>
+</header> -->
 
  <div class="container">
 
@@ -24,6 +24,7 @@
  <ul>
    {{#each model questions as |question|}}
      <li>{{question.question}} - {{question.date}} - by {{question.author}}</li>
+     <li>{{answer-tile answer=answer  destroyAnswer=destroyAnswer}}</li>
    {{/each}}
  </ul>
 

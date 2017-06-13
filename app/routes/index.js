@@ -6,5 +6,11 @@ export default Ember.Route.extend({
         questions: this.store.findAll('question'),
         answers: this.store.findAll('answer')
       });
+    },
+    actions:{
+      destroyAnswer(answer){
+        answer.destroyRecord();
+        this.transitionTo('index');
+      }
     }
   });

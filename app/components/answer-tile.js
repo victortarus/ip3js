@@ -11,8 +11,8 @@ export default Ember.Component.extend({
     this.set("isAnswerDialogShowing",false);
   },
   delete(answer) {
-      if (confirm('Are you sure you want to delete this rental?')) {
-        this.sendAction('destroyRental', rental);
+      if (confirm('Are you sure you want to delete this answer?')) {
+        this.sendAction('destroyAnswer', answer);
       }
     }
 });
